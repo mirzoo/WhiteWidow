@@ -774,11 +774,11 @@ template {
 
 @media (max-width: 500px) {
   .about {
-    padding: 100px 16px 50px 16px;
+    padding: 180px 16px 50px 16px;
   }
   .about-title {
     font-size: 32px;
-    top: -72px;
+    top: -120px;
   }
   .about-item {
     -webkit-box-orient: vertical;
