@@ -12,27 +12,29 @@
         left: 0
         width: 100%
         height: 100%
-        background: #FFFFFF
+        background: #ffffff
         z-index: 4
+        border-radius: 0px 0px 40px 40px
     &-wrap
         position: relative
         display: flex
-        justify-content: space-between
+        justify-content: center
         align-items: center
         min-height: 80px
         padding: 0px 16px
     &-logo
+        display: none
         max-width: 48px
         height: 48px
     &-list
         display: flex
         position: relative
-        z-index: 4
+        z-index: 8
         li
             list-style: none
             margin-left: 40px
     &-link
-        color: #737274
+        color: #1B192A
         font-size: 14px
         text-decoration: none
         font-weight: 400
@@ -43,7 +45,7 @@
     &-burger
         display: none
     &-logo
-        z-index: 5
+        z-index: 7
 
 
 @media (max-width: 768px)
@@ -52,13 +54,14 @@
     .header
         &-wrap
             min-height: 80px
+            justify-content: flex-end
         &-menu
             position: fixed
             top: -120%
             left: 0
             width: 100%
             height: 100%
-            background-color: #d6d6d6
+            background-color: #E8E9EC
             z-index: 3
             padding: 100px 0 0 0
             transition: 0.3s
@@ -72,7 +75,7 @@
             position: relative
             width: 30px
             height: 20px
-            z-index: 5
+            z-index: 7
             &::before, &::after
                 transition: 0.3s
                 content: ''
