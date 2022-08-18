@@ -525,8 +525,7 @@ template {
 }
 
 .main {
-  margin-top: 80px;
-  padding: 0 16px;
+  padding: 80px 16px;
 }
 
 .main-bg {
@@ -682,7 +681,7 @@ template {
 }
 
 .about {
-  padding: 150px 16px;
+  padding: 40px 16px;
 }
 
 .about-wrap {
@@ -702,8 +701,6 @@ template {
 }
 
 .about-title {
-  position: absolute;
-  top: -85px;
   font-size: 85px;
   line-height: 128px;
   font-weight: 700;
@@ -756,6 +753,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding-bottom: 80px;
+  }
   .about-title {
     font-size: 60px;
     top: -78px;
@@ -809,8 +809,7 @@ template {
 }
 
 .slider {
-  padding: 0 16px;
-  padding-bottom: 50px;
+  padding: 40px 16px;
 }
 
 .slider-wrap {
@@ -911,7 +910,7 @@ template {
 }
 
 .conception {
-  padding: 150px 16px;
+  padding: 40px 16px;
 }
 
 .conception-wrap {
@@ -931,8 +930,6 @@ template {
 }
 
 .conception-title {
-  position: absolute;
-  top: -85px;
   font-size: 85px;
   line-height: 128px;
   font-weight: 700;
@@ -1008,6 +1005,10 @@ template {
 }
 
 @media (max-width: 768px) {
+  .conception {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
   .conception-title {
     font-size: 60px;
     top: -78px;
@@ -1027,6 +1028,7 @@ template {
 @media (max-width: 500px) {
   .conception {
     padding: 150px 16px;
+    padding-bottom: 100px;
   }
   .conception-title {
     font-size: 32px;
@@ -1070,8 +1072,7 @@ template {
 }
 
 .contacts {
-  padding: 0px 16px;
-  padding-bottom: 100px;
+  padding: 40px 16px;
 }
 
 .contacts-wrap {
