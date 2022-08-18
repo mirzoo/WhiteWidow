@@ -630,6 +630,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .main {
+    padding-bottom: 0px;
+  }
   .main-title {
     font-size: 50px;
     line-height: 70px;
@@ -648,6 +651,9 @@ template {
 }
 
 @media (max-width: 500px) {
+  .main {
+    padding-bottom: 0px;
+  }
   .main-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -753,9 +759,6 @@ template {
 }
 
 @media (max-width: 768px) {
-  .about {
-    padding-bottom: 80px;
-  }
   .about-title {
     font-size: 60px;
     top: -78px;
@@ -774,7 +777,7 @@ template {
 
 @media (max-width: 500px) {
   .about {
-    padding: 180px 16px 50px 16px;
+    padding: 40px 16px;
   }
   .about-title {
     font-size: 32px;
@@ -1005,13 +1008,9 @@ template {
 }
 
 @media (max-width: 768px) {
-  .conception {
-    padding-bottom: 80px;
-    padding-top: 80px;
-  }
   .conception-title {
     font-size: 60px;
-    top: -78px;
+    margin-bottom: 24px;
   }
   .conception-item__img {
     width: 300px;
@@ -1026,13 +1025,8 @@ template {
 }
 
 @media (max-width: 500px) {
-  .conception {
-    padding: 150px 16px;
-    padding-bottom: 100px;
-  }
   .conception-title {
     font-size: 32px;
-    top: -70px;
     line-height: 40px;
     text-align: center;
   }
