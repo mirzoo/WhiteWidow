@@ -31,6 +31,7 @@
         position: relative
         z-index: 8
         li
+            display: block
             list-style: none
             margin-left: 40px
     &-link
@@ -42,10 +43,30 @@
         transition: 0.3s
         &:hover
             color: #007AFF
+
     &-burger
         display: none
     &-logo
         z-index: 7
+
+
+.header
+    &-menu
+        ul
+            position: relative
+        ul ul
+            background-color: #fafafa
+            display: none
+            position: absolute
+            text-align: left
+            width: 200px
+            margin: 0
+            padding: 0
+            border-radius: 16px
+            li
+                padding: 16px
+        li:hover ul
+            display: block
 
 
 @media (max-width: 768px)
@@ -65,6 +86,15 @@
             z-index: 3
             padding: 100px 0 0 0
             transition: 0.3s
+            ul ul
+                display: block
+                background-color: #E8E9EC
+                position: relative
+                margin-top: 50px
+                li
+                    padding: 0
+                    margin: 0
+                    margin-bottom: 50px
         &-list
             display: block
             li
@@ -96,6 +126,8 @@
                 height: 2px
                 top: 9px
 
+
+
 .header-burger.active
     &::before
         transform: rotate(45deg)
@@ -108,3 +140,5 @@
 
 .header-menu.active
     top: 0
+
+

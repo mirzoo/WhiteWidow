@@ -414,6 +414,7 @@ template {
 }
 
 .header-list li {
+  display: block;
   list-style: none;
   margin-left: 40px;
 }
@@ -440,6 +441,29 @@ template {
   z-index: 7;
 }
 
+.header-menu ul {
+  position: relative;
+}
+
+.header-menu ul ul {
+  background-color: #fafafa;
+  display: none;
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  border-radius: 16px;
+}
+
+.header-menu ul ul li {
+  padding: 16px;
+}
+
+.header-menu li:hover ul {
+  display: block;
+}
+
 @media (max-width: 768px) {
   body.lock {
     overflow: hidden;
@@ -461,6 +485,17 @@ template {
     padding: 100px 0 0 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+  }
+  .header-menu ul ul {
+    display: block;
+    background-color: #E8E9EC;
+    position: relative;
+    margin-top: 50px;
+  }
+  .header-menu ul ul li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
   }
   .header-list {
     display: block;
@@ -759,6 +794,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding-bottom: 100px;
+  }
   .about-title {
     font-size: 60px;
     top: -78px;
@@ -777,7 +815,7 @@ template {
 
 @media (max-width: 500px) {
   .about {
-    padding: 40px 16px;
+    padding: 180px 16px 50px 16px;
   }
   .about-title {
     font-size: 32px;
@@ -1008,6 +1046,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .conception {
+    padding: 100px 16px;
+  }
   .conception-title {
     font-size: 60px;
     margin-bottom: 24px;
@@ -1025,6 +1066,10 @@ template {
 }
 
 @media (max-width: 500px) {
+  .conception {
+    padding: 150px 16px;
+    padding-bottom: 100px;
+  }
   .conception-title {
     font-size: 32px;
     line-height: 40px;
@@ -1375,5 +1420,47 @@ template {
     -ms-flex-line-pack: center;
         align-content: center;
   }
+}
+
+.privacy {
+  padding: 100px 20px;
+}
+
+.privacy__title {
+  color: #007AFF;
+  font-size: 32px;
+}
+
+.privacy__subtitle {
+  color: #1B192A;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.privacy p {
+  color: #007AFF;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.terms {
+  padding: 100px 20px;
+}
+
+.terms__title {
+  color: #007AFF;
+  font-size: 32px;
+}
+
+.terms__subtitle {
+  color: #1B192A;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.terms p {
+  color: #007AFF;
+  font-size: 24px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
